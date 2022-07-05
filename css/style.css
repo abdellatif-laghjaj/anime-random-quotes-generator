@@ -28,7 +28,8 @@ body{
 
 .container header{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 100%;
     padding: 12px 20px;

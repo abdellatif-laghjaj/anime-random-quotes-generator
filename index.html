@@ -20,13 +20,13 @@
     <div class="mockup-window border bg-base-300">
         <div class="container">
             <header class="mb-5">
-                <h1 class="text-center text-xl font-bold">Random Anime Quote Generator</h1>
+                <h1 class="text-center text-2xl font-bold mb-4">Random Anime Quote Generator</h1>
                 <div class="form-control">
                     <div class="input-group">
-                        <select class="select select-bordered">
+                        <select class="select select-bordered" id="search_by">
                             <option disabled selected>Search By</option>
-                            <option>By Anime Name</option>
-                            <option>By Character Name</option>
+                            <option value="by_name">By Anime Name</option>
+                            <option value="by_characeter">By Character Name</option>
                           </select>  
                       <input type="text" placeholder="Search by anime name or caracter..." class="input input-accent input-bordered" />
                       <button class="btn btn-accent btn-square" id="search_btn">
