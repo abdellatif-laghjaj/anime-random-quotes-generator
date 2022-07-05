@@ -39,8 +39,7 @@ function getRandomQuote(url){
         anime_name.innerHTML = data.anime;
         random_btn.disabled = false;
         random_btn.innerHTML = "Random Quote <i class='bx bxs-dice-4 bx-sm'></i>";
-    })
-    .catch(error => console.log(error));
+    }).catch(error => alert(error));
 }
 
 //Get anime quote by title
@@ -51,8 +50,7 @@ function getQuoteByTitle(url){
         quote.innerHTML = data.quote;
         character.innerHTML = data.character;
         anime_name.innerHTML = data.anime;
-    })
-    .catch(error => console.log(error));
+    }).catch(error => alert(error));
 }
 
 //Get anime quote by character
@@ -63,5 +61,5 @@ function getQuoteByCharacter(url){
         quote.innerHTML = data.quote;
         character.innerHTML = data.character;
         anime_name.innerHTML = data.anime;
-    }).catch(error => console.log(error));
+    }).catch(error => alert(error));
 }
