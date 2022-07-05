@@ -24,7 +24,8 @@ search_btn.addEventListener('click', () => {
     search_value = input.value;
     search_by_value = search_by.value;
     if (search_by_value === 'by_name') getAnimeByTitle(anime_by_title + search_value);
-    getQuoteByCharacter(anime_by_character + search_value);
+    else if (search_by_value === 'by_character') getAnimeByCharacter(anime_by_character + search_value);
+    else alert('Please select a search by');
 });
 
 //Get random anime quote
