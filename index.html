@@ -12,10 +12,43 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.18.0/dist/full.css" rel="stylesheet" type="text/css" />
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
 
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <title>Radnom Anime Quote Generator | By Abdellatif Laghjaj</title>
 </head>
 <body>
     
+    <div class="mockup-window border bg-base-300">
+        <div class="container">
+            <header>
+                <h1>Random Anime Quote Generator</h1>
+                <div class="form-control">
+                    <div class="input-group">
+                      <input type="text" placeholder="Search by anime name or caracter..." class="input input-accent input-bordered" />
+                      <button class="btn btn-accent btn-square">
+                        <i class="bx bx-search bx-sm"></i>
+                      </button>
+                    </div>
+                  </div>
+            </header>
+    
+            <div class="main-content">
+                <h1 class="name">
+                    Naruto
+                </h1>
+                <p class="quote">
+                    I am a ninja
+                </p>
+                <p class="author">
+                    Naruto Uzumaki
+                </p>
+
+                <button class="btn btn-accent btn-xs sm:btn-sm md:btn-md lg:btn-lg gap-2">
+                    Random Quote
+                    <i class='bx bxs-dice-4 bx-sm'></i>
+                </button>
+            </div>
+        </div>
+    </div>
 
     <!-- JS -->
     <script src="js/main.js"></script>
