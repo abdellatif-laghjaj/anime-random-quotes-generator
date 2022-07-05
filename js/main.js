@@ -23,8 +23,8 @@ random_btn.addEventListener('click', () => {
 search_btn.addEventListener('click', () => {
     search_value = input.value;
     search_by_value = search_by.value;
-    if (search_by_value === 'by_name') getAnimeByTitle(anime_by_title + search_value);
-    else if (search_by_value === 'by_character') getAnimeByCharacter(anime_by_character + search_value);
+    if (search_by_value === 'by_name') getQuoteByTitle(anime_by_title + search_value);
+    else if (search_by_value === 'by_character') getQuoteByCharacter(anime_by_character + search_value);
     else alert('Please select a search by');
 });
 
@@ -48,9 +48,11 @@ function getQuoteByTitle(url){
     fetch(url)
     .then(response => response.json())
     .then(data => {
-        quote.innerHTML = data.quote;
-        character.innerHTML = data.character;
-        anime_name.innerHTML = data.anime;
+        let data_length = data.length;
+        let random_index = Math.floor(Math.random() * data_length);
+        quote.innerHTML = data[random_index].quote;
+        character.innerHTML = data[random_index].character;
+        anime_name.innerHTML = data[random_index].anime;
     }).catch(error => alert(error));
 }
 
@@ -59,9 +61,11 @@ function getQuoteByCharacter(url){
     fetch(url)
     .then(response => response.json())
     .then(data => {
-        quote.innerHTML = data.quote;
-        character.innerHTML = data.character;
-        anime_name.innerHTML = data.anime;
+        let data_length = data.length;
+        let random_index = Math.floor(Math.random() * data_length);
+        quote.innerHTML = data[random_index].quote;
+        character.innerHTML = data[random_index].character;
+        anime_name.innerHTML = data[random_index].anime;
     }).catch(error => alert(error));
 }
 
