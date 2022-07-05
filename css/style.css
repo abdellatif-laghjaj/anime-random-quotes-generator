@@ -52,3 +52,23 @@ body{
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
+
+
+.container .bottom-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.author{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 12px 20px;
+    background: rgba( 255, 255, 255, 0.1 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
