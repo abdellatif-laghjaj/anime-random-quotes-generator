@@ -29,12 +29,16 @@ search_btn.addEventListener('click', () => {
 
 //Get random anime quote
 function getRandomQuote(url){
+    random_btn.disabled = true;
+    random_btn.innerHTML = "Loading... <i class='bx bx-loader-circle bx-sm'></i>";
     fetch(url)
     .then(response => response.json())
     .then(data => {
         quote.innerHTML = data.quote;
         character.innerHTML = data.character;
         anime_name.innerHTML = data.anime;
+        random_btn.disabled = false;
+        random_btn.innerHTML = "Random Quote <i class='bx bxs-dice-4 bx-sm'></i>";
     })
     .catch(error => console.log(error));
 }
