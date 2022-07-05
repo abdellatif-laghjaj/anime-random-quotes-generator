@@ -24,7 +24,7 @@
                 <div class="form-control">
                     <div class="input-group">
                       <input type="text" placeholder="Search by anime name or caracter..." class="input input-accent input-bordered" />
-                      <button class="btn btn-accent btn-square">
+                      <button class="btn btn-accent btn-square" id="search_btn">
                         <i class="bx bx-search bx-sm"></i>
                       </button>
                     </div>
@@ -32,13 +32,13 @@
             </header>
     
             <div class="main-content">
-                <h1 class="name text-2xl font-bold">
+                <h1 class="anime_name text-2xl font-bold">
                     Naruto
                 </h1>
                 <div class="max-w-4xl p-4 rounded-lg">
                     <div class="mb-2">
                       <div class="h-3 text-2xl text-left"><i class='bx bxs-quote-alt-left'></i></div>
-                        <p class="px-4 text-xl text-center">
+                        <p class="px-4 text-xl text-center" id="quote">
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam obcaecati
                             laudantium recusandae, debitis eum voluptatem ad, illo voluptatibus
                             temporibus odio provident.
@@ -50,10 +50,10 @@
                 <div class="bottom-content">
                     <p class="author italic">
                         <i class='bx bxl-slack-old mr-2'></i>
-                        <span>Naruto Uzumaki</span>
+                        <span id="character">Naruto Uzumaki</span>
                     </p>
     
-                    <button class="btn btn-accent btn-xs sm:btn-sm md:btn-md lg:btn-md gap-2">
+                    <button class="btn btn-accent btn-xs sm:btn-sm md:btn-md lg:btn-md gap-2" id="random_btn">
                         Random Quote
                         <i class='bx bxs-dice-4 bx-sm'></i>
                     </button>
