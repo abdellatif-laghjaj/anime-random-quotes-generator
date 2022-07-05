@@ -67,7 +67,7 @@ body{
     display: flex;
     justify-content: end;
     align-items: center;
-    padding: 12px 20px;
+    padding: 10px 20px;
     background: rgba( 255, 255, 255, 0.1 );
     backdrop-filter: blur( 2px );
     -webkit-backdrop-filter: blur( 2px );
