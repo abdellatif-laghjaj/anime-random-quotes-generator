@@ -88,5 +88,41 @@ header .form-control .input-group input{
         width: 96%;
     }
 
-    .container header .
+    .container header h1{
+        font-size: 20px;
+    }
+
+    .author{
+        padding: 10px;
+    }
+
+    .author span{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 530px){
+    header .form-control .input-group select{
+        width: 160px;
+    }
+
+    #random_btn{
+        padding: 0 14px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 496px){
+    #qoute{
+        font-size: 12px;
+    }
+}
+ 
+
+
+
+@media only screen and (max-width: 440px){
+    header .form-control .input-group select{
+        width: 120px;
+    }
 }

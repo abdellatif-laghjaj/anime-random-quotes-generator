@@ -64,3 +64,10 @@ function getQuoteByCharacter(url){
         anime_name.innerHTML = data.anime;
     }).catch(error => alert(error));
 }
+
+
+//chekc if window size is small
+
+if (window.innerWidth < 440) {
+    random_btn.innerHTML = "<i class='bx bxs-dice-4 bx-sm'></i>";
+}
