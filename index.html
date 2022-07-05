@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="forest">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,8 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/theme_and_copyright.css">
+    
     <!-- DaisyUI and Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.18.0/dist/full.css" rel="stylesheet" type="text/css" />
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
@@ -18,8 +20,18 @@
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <title>Radnom Anime Quote Generator | By Abdellatif Laghjaj</title>
 </head>
+
 <body>
-    
+
+    <!-- Copyright -->
+    <div class="author-text">
+        <p>Made with ❤️
+            by <a href="https://github.com/abdellatif-laghjaj" target="_blank">
+                <b>Abdellatif Laghjaj</b>
+            </a>
+        </p>
+    </div>
+
     <div class="mockup-window border bg-base-300">
         <div class="container">
             <header class="mb-5">
@@ -30,35 +42,37 @@
                             <option selected>Search By</option>
                             <option value="by_name">By Anime Name</option>
                             <option value="by_character">By Character Name</option>
-                          </select>  
-                      <input type="text" placeholder="Search ..." class="input input-accent input-bordered" />
-                      <button class="btn btn-accent btn-square" id="search_btn">
-                        <i class="bx bx-search bx-sm"></i>
-                      </button>
+                        </select>
+                        <input type="text" placeholder="Search ..." class="input input-accent input-bordered" />
+                        <button class="btn btn-accent btn-square" id="search_btn">
+                            <i class="bx bx-search bx-sm"></i>
+                        </button>
                     </div>
-                  </div>
+                </div>
             </header>
-    
+
             <div class="main-content">
                 <h1 class="text-2xl font-bold" id="anime_name">
                     Fairy Tail
                 </h1>
                 <div class="max-w-4xl p-4 rounded-lg">
                     <div class="mb-2">
-                      <div class="h-3 text-2xl text-left"><i class='bx bxs-quote-alt-left mr-2'></i></div>
+                        <div class="h-3 text-2xl text-left"><i class='bx bxs-quote-alt-left mr-2'></i></div>
                         <p class="px-4 text-xl text-center mt-2" id="quote">
-                            Even if I can't see. Even if I can't hear. I have light inside me. The path I walked with my friends, is bringing light to my future. I don't fear anything! This isn't even worthy of being called pain! The worst pain is.. The pain of losing your light.
+                            Even if I can't see. Even if I can't hear. I have light inside me. The path I walked with my
+                            friends, is bringing light to my future. I don't fear anything! This isn't even worthy of
+                            being called pain! The worst pain is.. The pain of losing your light.
                         </p>
-                      <div class="h-3 text-2xl text-right"><i class='bx bxs-quote-alt-right ml-2'></i></div>
+                        <div class="h-3 text-2xl text-right"><i class='bx bxs-quote-alt-right ml-2'></i></div>
                     </div>
                 </div>
-                
+
                 <div class="bottom-content">
                     <p class="author italic">
                         <i class='bx bxl-slack-old mr-2'></i>
                         <span id="character">Erza Scarlet</span>
                     </p>
-    
+
                     <button class="btn btn-accent gap-2" id="random_btn">
                         Random Quote
                         <i class='bx bxs-dice-4 bx-sm'></i>
@@ -68,7 +82,31 @@
         </div>
     </div>
 
+    <!--Theme switcher-->
+    <div class="theme-switcher">
+        <div class="dropdown dropdown-left">
+            <label tabindex="0" class="btn m-1">
+                <i class='bx bxs-palette bx-sm'></i>
+            </label>
+            <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                <li class="theme-item" theme="cupcake"><a>cupcake</a></li>
+                <li class="theme-item" theme="dark"><a>dark</a></li>
+                <li class="theme-item" theme="light"><a>light</a></li>
+                <li class="theme-item" theme="bumblebee"><a>bumblebee</a></li>
+                <li class="theme-item" theme="synthwave"><a>synthwave</a></li>
+                <li class="theme-item" theme="halloween"><a>halloween</a></li>
+                <li class="theme-item" theme="fantasy"><a>fantasy</a></li>
+                <li class="theme-item" theme="dracula"><a>dracula</a></li>
+                <li class="theme-item" theme="aqua"><a>aqua</a></li>
+                <li class="theme-item" theme="luxury"><a>luxury</a></li>
+                <li class="theme-item" theme="night"><a>night</a></li>
+            </ul>
+        </div>
+    </div>
+
     <!-- JS -->
     <script src="js/main.js"></script>
+    <script src="js/theme_switcher.js"></script>
 </body>
+
 </html>
