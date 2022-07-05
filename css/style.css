@@ -38,6 +38,11 @@ body{
     -webkit-backdrop-filter: blur( 2px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
+    overflow: hidden;
+}
+
+header .form-control .input-group input{
+    width: 100%;
 }
 
 .container .main-content{
@@ -74,4 +79,14 @@ body{
     -webkit-backdrop-filter: blur( 2px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 834px){
+    .mockup-window{
+        width: 96%;
+    }
+
+    .container header .
 }
